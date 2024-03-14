@@ -8,7 +8,7 @@ the layout was provided by the odin project then i changed into html and css.
 
 ## image
 
-Here is the image :
+Here is the layout :
 
 <img src="./img/layout.png" alt="layout" width="500" height="300">
 
