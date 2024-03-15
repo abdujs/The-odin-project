@@ -1,4 +1,4 @@
-/*
+
 function getComputerChoice(){
     const choices = ['Rock', 'Paper', 'Scissors'];
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -25,16 +25,12 @@ function playRound(playerSelection , computerSelection){
     }
 }
 
-const playerSelection = ' rock';
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-*/
-function toUpper(string){
-    return string.toUpperCase();
-}
+const buttons = document.querySelectorAll('button');
 
-let cars = ["Saab", "Volvo", "BMW", "Ford"];
-//let byck = ['bajaje', 'moter', 'bishkelilit'];
-
-const upperCars = cars.map(toUpper);
-console.log(upperCars);
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const playerSelection = button.id;
+      const computerSelection = getComputerChoice();
+      console.log(playRound(playerSelection, computerSelection));
+    });
+  });
