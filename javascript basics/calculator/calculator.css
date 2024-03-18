@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+#calculator {
+    width:auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, alph0.1);
+}
