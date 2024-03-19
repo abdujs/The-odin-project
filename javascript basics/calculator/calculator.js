@@ -3,7 +3,7 @@ const displayCurrent = document.getElementById('current-operand');
 const displayPrevious  = document.getElementById('previous-operand');
 const numberButtons = document.querySelectorAll('.number');
 const operationButtons = document.querySelectorAll('.operation');
-//specia buttons
+//special buttons
 const equalsButton = document.getElementById('equals');
 const clearButton  = document.getElementById('clear');
 const deleteButton  = document.getElementById('delete');
@@ -40,3 +40,24 @@ numberButtons.forEach(button => {
   function appendDot() {
     // Function to handle decimal point input
   }
+
+let currentOperand = '';
+let previousOperand = '';
+let operation = null;
+
+//Handling Number Inputs
+function appendNumber(number) {
+  if (number === '.' && currentOperand.includes('.')) return; // Prevent multiple decimals
+  currentOperand = currentOperand.toString() + number.toString();
+}
+
+// Choosing an Operation
+function chooseOperation(selectedOperation) {
+  if (currentOperand === '') return;
+  if (previousOperand !== '') {
+      compute();
+  }
+  operation = selectedOperation;
+  previousOperand = currentOperand;
+  currentOperand = '';
+}
