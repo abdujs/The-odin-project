@@ -32,8 +32,8 @@ numberButtons.forEach(button => {
     updateDisplay();  }
   
   function deleteNumber() {
-    // Function to delete the last entered number or decimal
-  }
+    currentOperand = currentOperand.toString().slice(0, -1);
+    updateDisplay();  }
   
   function compute() {
     // Function to compute the expression
