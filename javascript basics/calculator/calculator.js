@@ -1,8 +1,9 @@
-const calculator = document.getElementById('calculator ');
-const displayCurrent = document.getElementById('current-operand');
 const displayPrevious  = document.getElementById('previous-operand');
-const numberButtons = document.querySelectorAll('.number');
+const displayCurrent = document.getElementById('current-operand');
 const operationButtons = document.querySelectorAll('.operation');
+const numberButtons = document.querySelectorAll('.number');
+const calculator = document.getElementById('calculator ');
+
 //special buttons
 const equalsButton = document.getElementById('equals');
 const clearButton  = document.getElementById('clear');
@@ -103,6 +104,6 @@ function updateDisplay() {
 }
 
 //add  Event Listeners for special buttons
-clearButton.addEventListener('click', clear);
 deleteButton.addEventListener('click', deleteNumber);
 dotButton.addEventListener('click', appendDot);
+clearButton.addEventListener('click', clear);
