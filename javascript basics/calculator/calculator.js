@@ -26,8 +26,10 @@ numberButtons.forEach(button => {
 
   // Handling Special Functions
   function clear() {
-    // Function to clear the calculator's state
-  }
+    currentOperand = '';
+    previousOperand = '';
+    operation = null;
+    updateDisplay();  }
   
   function deleteNumber() {
     // Function to delete the last entered number or decimal
