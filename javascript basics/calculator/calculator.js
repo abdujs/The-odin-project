@@ -3,6 +3,7 @@ const displayCurrent = document.getElementById('current-operand');
 const displayPrevious  = document.getElementById('previous-operand');
 const numberButtons = document.querySelectorAll('.number');
 const operationButtons = document.querySelectorAll('.operation');
+//specia buttons
 const equalsButton = document.getElementById('equals');
 const clearButton  = document.getElementById('clear');
 const deleteButton  = document.getElementById('delete');
@@ -22,3 +23,20 @@ numberButtons.forEach(button => {
         updateDisplay();
     });
   });
+
+  // Handling Special Functions
+  function clear() {
+    // Function to clear the calculator's state
+  }
+  
+  function deleteNumber() {
+    // Function to delete the last entered number or decimal
+  }
+  
+  function compute() {
+    // Function to compute the expression
+  }
+  
+  function appendDot() {
+    // Function to handle decimal point input
+  }
