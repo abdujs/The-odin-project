@@ -29,19 +29,24 @@ numberButtons.forEach(button => {
     currentOperand = '';
     previousOperand = '';
     operation = null;
-    updateDisplay();  }
+    updateDisplay();  
+  }
   
   function deleteNumber() {
     currentOperand = currentOperand.toString().slice(0, -1);
-    updateDisplay();  }
+    updateDisplay(); 
+   }
   
   function compute() {
     // Function to compute the expression
   }
   
   function appendDot() {
-    // Function to handle decimal point input
-  }
+    if (currentOperand.includes('.')) return; // Prevent multiple decimals
+    if (currentOperand === '') currentOperand = '0'; // If empty, start with '0.'
+    currentOperand += '.';
+    updateDisplay();
+    }
 
 let currentOperand = '';
 let previousOperand = '';
