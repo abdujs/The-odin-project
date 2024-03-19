@@ -91,3 +91,9 @@ function compute() {
   previousOperand = '';
   updateDisplay(); // Refresh the display with the new state
 }
+
+//Updating the Display
+function updateDisplay() {
+  document.getElementById('current-operand').innerText = currentOperand;
+  document.getElementById('previous-operand').innerText = previousOperand + ' ' + (operation || '');
+}
