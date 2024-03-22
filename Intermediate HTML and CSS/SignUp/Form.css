@@ -5,16 +5,14 @@
   }
   body {
     color: black;
-    background-color: #f3f5f7;
+    background-color:  #eaedf0;
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.3;
-    
 }
 .container{
     display: flex;
     width:auto;
-
 }
 img{
     height: 100vh;
@@ -22,7 +20,8 @@ img{
 }
 .form-container{
     margin: 200px 50px;
-    display: block;
+    display: inline-block;
+
 
 }
 .p-container{
@@ -33,27 +32,35 @@ img{
     color: black;
 }
 .f-container{
-    background-color: white;
+    background-color:#f3f5f7;
     padding: 30px 20px;
     margin-top: 20px;
     margin-bottom: 30px;
-    display: block;
 }
 
 .inputs{
     display: flex;
     justify-content: space-between;
-    
-
+ 
 }
 .button{
     margin: 20px 0px;
-    background-color: green;
-    padding: 1em 3em;
+    background-color: rgb(52, 114, 52);
+    padding: 0.8em 2.5em;
     border-radius: 0.5em;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: #EAEDF0;
+}
 
+input{
+    margin-bottom: 2em;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
 
 }
