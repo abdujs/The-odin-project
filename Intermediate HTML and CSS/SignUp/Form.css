@@ -20,9 +20,7 @@ img{
 }
 .form-container{
     margin: 200px 50px;
-    display: inline-block;
-
-
+    width: 100%;
 }
 .p-container{
     font-size: 27px;
@@ -36,12 +34,14 @@ img{
     padding: 30px 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+
 }
 
 .inputs{
     display: flex;
-    justify-content: space-between;
- 
+    justify-content:flex-start;
+    padding: 2em 0em;
+
 }
 .button{
     margin: 20px 0px;
@@ -56,13 +56,20 @@ img{
 input{
     margin-bottom: 2em;
     padding: 0.7em;
-    width: 300px;
+    width: 350px;
     font-size: 20px;
     border-radius: 10px;
-    border-style: hidden;
+    border-color: rgb(95, 226, 226);
+    background-color: rgb(230, 230, 247);
+    border-style: inset;
 }
 label{
     font-size: 20px;
     font-weight: bold;
+
+}
+.input1{
+    padding-right: 5em;
+    margin-right: 5em;
 
 }
