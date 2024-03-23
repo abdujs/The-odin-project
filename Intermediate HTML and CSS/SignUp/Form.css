@@ -63,9 +63,6 @@ input{
     background-color: rgb(230, 230, 247);
     border-style: inset;
 }
-input:invalid {
-    border: 2px dashed red;
-  }
 label{
     font-size: 20px;
     font-weight: bold;
