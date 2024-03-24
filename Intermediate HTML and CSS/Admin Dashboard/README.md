@@ -1,0 +1,2 @@
+# Admin Dashboard Project
+The Admin Dashboard Project provides administrators with a user-friendly interface to manage and monitor the system. It offers a comprehensive set of features to facilitate efficient administration and decision-making.
