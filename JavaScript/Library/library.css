@@ -1,0 +1,60 @@
+/* Styles for the library heading */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Styles for the book container */
+  #book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styles for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styles for form headings */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for form labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Styles for form inputs */
+  input[type="text"],
+  input[type="number"],
+  input[type="checkbox"] {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styles for submit button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
