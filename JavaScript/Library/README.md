@@ -1,0 +1,2 @@
+# Library App
+The Library App is a JavaScript application that allows users to manage a collection of books in a virtual library. Users can add books with details such as title, author, number of pages, and read status. They can also view, update, and remove books from the library.
